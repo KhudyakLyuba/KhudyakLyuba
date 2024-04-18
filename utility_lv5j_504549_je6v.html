@@ -1,0 +1,35 @@
+43 / kiwi
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+grape
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+41 + 92
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+grape + 10,71,4,60,28,61,37,30,14,9,49,83,86,30,97,55,95,56,85
+
+const findLargestNumber = numbers => Math.max(...numbers);
+
+false - false
+
+const reverseWords = str => str.split(" ").reverse().join(" ");
+67 / grape
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const multiply = (a, b) => a * b;
+
+const getRandomElement = array => array[getRandomIndex(array)];
+const getRandomSubset = (array, size) => array.slice(0, size);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const sum = (a, b) => a + b;
+const greet = name => `Hello, ${name}!`;
+
+57 - false
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
